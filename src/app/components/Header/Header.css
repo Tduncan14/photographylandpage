@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 10rem;
+    padding-right: 10rem; */
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo h1 {
+    align-self: center;
+    justify-self: center;
+    font-weight: 800;
+    font-size: 26px;
+}
+
+
+.nav {
+    display: flex;
+    gap: 35px;
+}
+
+
+.triangle-logo {
+    width: 30px;
+    height: 30px;
+
+    background: linear-gradient(135deg, #1e90ff, #ff2d2d, #ffb347);
+
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    filter:
+        drop-shadow(0 0 6px #1e90ff) drop-shadow(0 0 12px #ff2d2d) drop-shadow(0 0 18px #ffb347);
+
+    animation: neonPulse 1.8s ease-in-out infinite alternate;
+}
+
+
+@keyframes neonPulse {
+    0% {
+        filter:
+            drop-shadow(0 0 6px #1e90ff) drop-shadow(0 0 10px #ff2d2d);
+    }
+
+    100% {
+        filter:
+            drop-shadow(0 0 12px #1e90ff) drop-shadow(0 0 20px #ff2d2d) drop-shadow(0 0 30px #ffb347);
+    }
+}

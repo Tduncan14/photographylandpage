@@ -1,0 +1,122 @@
+.artOne,
+.artTwo,
+.artThree {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    width: 100%;
+    align-items: stretch;
+
+
+    /* adjust as needed */
+}
+
+
+.artOne {
+    direction: rtl;
+}
+
+.artThree {
+    direction: rtl;
+}
+
+.gallery,
+.GalleryText {
+    flex: 1;
+    /* each takes 50% */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.textOne h1,
+.textTwo h1 {
+    font-weight: 700;
+    font-size: clamp(26px, 34px, 34px);
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+
+}
+
+
+.textThree {
+    text-align: left !important;
+}
+
+.textOne p {
+    line-height: 35px;
+
+
+}
+
+.gallery {
+    position: relative;
+    /* needed for Next.js Image or fill style */
+}
+
+.textOne {
+    background: black;
+    color: white;
+}
+
+.textTwo {
+    background-color: white;
+    color: black;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* remove inline spacing */
+    flex-shrink: 0;
+    /* prevent image shrinking */
+}
+
+.GalleryText {
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    padding: 2rem;
+    font-size: 1.1rem;
+    padding-left: 4rem;
+}
+
+.anInvite {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    gap: 25px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.reverseME {
+    display: flex;
+    margin-top: 2rem;
+    gap: 25px;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+
+/* this is the border area */
+
+
+
+.borderMe {
+    padding: 3rem;
+    position: relative;
+}
+
+.borderMe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, #1e90ff, #ff2d2d, #ffb347);
+}

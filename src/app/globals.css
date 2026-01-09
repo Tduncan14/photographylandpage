@@ -32,3 +32,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+section {
+  width: 100%;
+}
+
+.stories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

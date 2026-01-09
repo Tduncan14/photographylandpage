@@ -25,9 +25,28 @@
 
 .nav {
     display: flex;
-    gap: 35px;
+    gap: 45px;
+    font-weight: 700;
 }
 
+
+/* this is the invite button */
+
+.inviteButton {
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: .5rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+}
+
+
+
+/* triangle color */
 
 .triangle-logo {
     width: 30px;
@@ -43,6 +62,9 @@
 
     animation: neonPulse 1.8s ease-in-out infinite alternate;
 }
+
+
+/* this is the animation */
 
 
 @keyframes neonPulse {

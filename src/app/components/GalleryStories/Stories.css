@@ -5,10 +5,35 @@
     justify-content: end;
     color: white;
     filter: brightness(0.8);
+    cursor: pointer;
 
-
-
+    transition: transform 0.25s ease, filter 0.25s ease;
 }
+
+.stor:hover {
+    transform: translateY(-2.1rem);
+    filter: brightness(1);
+    border-bottom: 4px solid rgb(135deg, #1e90ff, #ff2d2d, #ffb347);
+}
+
+
+.stor::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(135deg, #1e90ff, #ff2d2d, #ffb347);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.stor:hover::after {
+    transform: scaleX(1);
+}
+
 
 .titlePara {
     padding: 2rem;

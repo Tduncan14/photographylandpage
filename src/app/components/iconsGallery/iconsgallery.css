@@ -1,0 +1,31 @@
+.iconsG {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+}
+
+
+.iconsG img {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    object-fit: contain;
+}
+
+
+
+.iconsG h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    font-size: clamp(18px, 20px, 24px);
+}
+
+
+.iconsG p {
+    width: 87%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.4rem;
+}

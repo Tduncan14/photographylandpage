@@ -4,3 +4,16 @@
     align-items: stretch;
 
 }
+
+.iconsSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    margin-top: 3.2rem;
+    gap: 30px;
+
+
+}

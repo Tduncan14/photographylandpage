@@ -1,12 +1,12 @@
 .stor {
-    height: 450px;
+    height: 470px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     color: white;
     filter: brightness(0.8);
     cursor: pointer;
-
+    padding: 1rem;
     transition: transform 0.25s ease, filter 0.25s ease;
 }
 
@@ -68,4 +68,14 @@ hr {
 
 .readStory h3 {
     font-weight: 600;
+}
+
+
+
+.svgArrow {
+    filter: brightness(0) invert(1);
+}
+
+.leftRight {
+    color: white;
 }

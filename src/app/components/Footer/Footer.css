@@ -1,4 +1,93 @@
 .Footer {
     background: #000;
     padding: 2rem;
+    display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 200px;
+}
+
+
+.LogoFooter h1 {
+    color: white;
+    font-size: clamp(16px, 18px, 24px);
+
+}
+
+
+.socialIcons {
+    margin-top: 4rem;
+    display: flex;
+    gap: 13px;
+    padding-bottom: 2rem;
+}
+
+.socialIcons img {
+    filter: brightness(0) invert(1);
+}
+
+.socialIcons img:hover {
+    filter: brightness(1) invert(0);
+}
+
+
+.leftFooter {
+    display: flex;
+    gap: 4rem;
+}
+
+.leftRight ul {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(12px, 14px, 18px);
+    gap: .6rem;
+}
+
+
+.rightFooter {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+
+.arrowMEe {
+    display: flex;
+    gap: 30px;
+    justify-self: end;
+    font-size: clamp(12px, 14px, 15px);
+}
+
+.arrowMEe img {
+    filter: brightness(0) invert(1);
+}
+
+
+.copyright {
+    margin-top: auto;
+
+}
+
+
+.copyright h3 {
+    margin-top: auto;
+    align-self: flex-end;
+    color: #DFDFDF;
+    filter: brightness(.5);
+}
+
+
+
+/*  */
+
+
+.leftFooterWrapper,
+.rightFooter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }

@@ -3,3 +3,13 @@
     grid-template-columns: repeat(4, 1fr);
     border-bottom: 1px solid #DFDFDF;
 }
+
+.fullMoon {
+    width: 100%;
+    /* Use 100% instead of 100vw */
+    height: 400px;
+    background-image: url('/assets/stories/desktop/moon-of-appalacia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

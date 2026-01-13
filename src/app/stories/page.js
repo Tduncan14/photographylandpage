@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Stories from "../components/GalleryStories/Stories";
 import './stories.css'
@@ -5,7 +7,7 @@ import './stories.css'
 const StoryPage = () => {
     return (
         <div>
-            <div> StoryPage</div>
+            <div className="fullMoon"> StoryPage</div>
 
             <div className="storiesStory">
                 <Stories Title={'The Mountains'} text={"John Appleseed"} bg={"assets/stories/desktop/mountains.jpg"} />

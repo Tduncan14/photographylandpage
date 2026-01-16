@@ -1,0 +1,81 @@
+.FeaturesContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.borderFeature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+
+.FeatureFeature {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: white;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.FeatureFeature h1 {
+    align-self: flex-start;
+    letter-spacing: 8px;
+    font-weight: 700;
+    font-size: clamp(15px, 32px, 33px);
+}
+
+.FeatureFeature p {
+    letter-spacing: 3px;
+    line-height: 24px;
+    font-size: clamp(12px, 14px, 16px);
+    margin-top: 1rem;
+    padding-right: 4rem;
+}
+
+.FeatureImage {
+    flex: 1.4;
+    width: 100%;
+    height: auto;
+}
+
+.FeatureImage {
+    object-fit: cover;
+    height: 100%;
+}
+
+.borderMee {
+    padding: 3rem;
+    position: relative;
+}
+
+.borderMee::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    width: 4px;
+    height: 60%;
+    background: linear-gradient(135deg, #1e90ff, #ff2d2d, #ffb347);
+}
+
+
+.FeaturesGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.5rem;
+    padding: 4rem;
+    margin-bottom: 2.5rem;
+    gap: 35px;
+}

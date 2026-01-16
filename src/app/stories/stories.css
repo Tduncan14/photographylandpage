@@ -1,5 +1,7 @@
 .storiesStory {
     display: grid;
+    height: 500px;
+    min-height: fit-content;
     grid-template-columns: repeat(4, 1fr);
     border-bottom: 1px solid #DFDFDF;
 }
@@ -7,9 +9,70 @@
 .fullMoon {
     width: 100%;
     /* Use 100% instead of 100vw */
-    height: 400px;
     background-image: url('/assets/stories/desktop/moon-of-appalacia.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "hazy hazy other other other other";
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.contentMoon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    grid-area: hazy;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+
+}
+
+.contentMoon h3 {
+    margin-bottom: 1rem;
+    font-size: clamp(12px, 15px, 24px);
+}
+
+.contentMoon h1 {
+    width: 70%;
+    letter-spacing: 10px;
+    font-weight: 700;
+    text-wrap: wrap;
+    font-size: clamp(26px, 28px, 30px);
+}
+
+
+.contentMoon h4 {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: rgba(223, 223, 233, 1);
+    font-size: clamp(10px, 15px, 17px);
+}
+
+.contentMoon .contentName {
+    font-weight: 700;
+}
+
+.contentMoon p {
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: rgba(223, 223, 233, 0.8);
+}
+
+
+.readMeStory {
+    display: flex;
+    gap: 15px;
+    margin-top: .5rem;
+    font-size: clamp(10px, 13px, 22px);
+    font-weight: 700;
+
+}
+
+.readMeStory img {
+    filter: brightness(0) invert(1);
 }

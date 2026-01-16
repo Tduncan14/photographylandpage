@@ -7,7 +7,33 @@ import './stories.css'
 const StoryPage = () => {
     return (
         <div>
-            <div className="fullMoon"> StoryPage</div>
+            <div className="fullMoon">
+
+                <div className="contentMoon">
+
+                    <h3>LAST MONTH'S  FEATURED  STORY </h3>
+
+
+                    <h1>HAZY FULL MOON OF APPALACHIA</h1>
+
+                    <h4>March 2nd 2020 <span className='contentName'> by John Appleseed</span></h4>
+
+
+                    <p>The dissected plateau area, while not actually made up of  geological mountains, is popularly
+                        called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges
+                        are not high, the terrain is extremely rugged.
+                    </p>
+
+
+                    <div className="readMeStory">
+                        <h2> READ THE STORY</h2>
+                        <img src="/assets/shared/desktop/arrow.svg" />
+                    </div>
+
+                </div>
+
+
+            </div>
 
             <div className="storiesStory">
                 <Stories Title={'The Mountains'} text={"John Appleseed"} bg={"assets/stories/desktop/mountains.jpg"} />

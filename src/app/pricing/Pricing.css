@@ -79,3 +79,125 @@
     margin-bottom: 2.5rem;
     gap: 35px;
 }
+
+.yearly {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 8rem;
+    gap: 40px;
+
+}
+
+.Monthlyp {
+    text-align: center;
+    width: 350px;
+    font-size: clamp(13px, 16px, 18px);
+    background: rgba(223, 223, 233, 0.2);
+    padding: 2rem;
+    transition: all 1s ease-in-out;
+
+}
+
+.Monthlyp h2 {
+    margin-top: 1.9rem;
+    margin-bottom: 1rem;
+    font-size: clamp(26px, 30px, 40px);
+    font-weight: 700;
+}
+
+
+.Monthlyp p {
+    color: darkgray;
+    font-size: clamp(12px, 15px, 16px);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.Monthlyp button {
+    background: #000;
+    color: white;
+    padding: .7rem;
+    width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: clamp(11px, 12px, 15px);
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.Price h1 {
+    font-size: clamp(30px, 38px, 40px);
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.Price h5 {
+    font-size: clamp(12px, 13px, 15px);
+    color: darkgrey;
+    font-weight: 700;
+    margin-top: -.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.Monthlyp:hover {
+    transform: scale(.8);
+    transform: scaleY(1.2);
+    cursor: pointer;
+    background: black;
+    padding-bottom: 2.3rem;
+}
+
+.Monthlyp:hover h1,
+.Monthlyp:hover h2,
+.Monthlyp:hover h3,
+.Monthlyp:hover h4,
+.Monthlyp:hover h5,
+.Monthlyp:hover h6 {
+    color: white;
+}
+
+/* Change button style when parent is hovered */
+.Monthlyp:hover button {
+    background: white;
+    color: black;
+}
+
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 14px 18px;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+}
+
+.pricing-table th {
+    background: #020617;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing-table td:first-child,
+.pricing-table th:first-child {
+    text-align: left;
+}
+
+.check {
+    color: #22c55e;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './feature.css'
 import Iconsgallery from '../components/iconsGallery/Iconsgallery'
+import FooterHero from '../components/FooterHero/FooterHero'
 
 const page = () => {
     return (
@@ -44,6 +45,11 @@ const page = () => {
 
 
             </div>
+
+
+
+
+            <FooterHero />
 
         </div>
     )

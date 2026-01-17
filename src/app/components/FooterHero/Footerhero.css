@@ -1,0 +1,20 @@
+.Footerfooterc {
+    background-image: url('/assets/shared/desktop/bg-beta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    padding-left: 7rem;
+    padding-right: 12rem;
+}
+
+
+.Footerfooterc h1 {
+    font-size: clamp(30px, 34px, 26px);
+    font-weight: 700;
+    letter-spacing: 5px;
+}

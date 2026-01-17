@@ -42,6 +42,8 @@ const Footer = () => {
             </div>
 
 
+
+
             <div className="rightFooter">
 
                 <div className="arrowMEe">

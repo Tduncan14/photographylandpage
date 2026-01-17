@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import './Pricing.css'
+import FooterHero from '../components/FooterHero/FooterHero';
 
 
 
@@ -220,6 +221,9 @@ const page = () => {
                 </table>
 
             </div>
+
+
+            <FooterHero />
 
         </div>
     )

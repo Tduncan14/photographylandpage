@@ -148,6 +148,8 @@ const page = () => {
 
             <div className="tablePrice">
 
+                <h1>COMPARE</h1>
+
                 <table class="pricing-table">
                     <thead>
                         <tr>

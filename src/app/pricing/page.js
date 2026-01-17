@@ -8,7 +8,7 @@ import FooterHero from '../components/FooterHero/FooterHero';
 
 const page = () => {
 
-    const [setisMonthly, isMonthly] = useState(false);
+    const [isYearly, setIsYearly] = useState(false);
 
 
     return (
@@ -44,98 +44,120 @@ const page = () => {
 
             <div className="payments">
 
-                <div className="yearly">
+
+
+                <div className="yearMEE">
+
+                    <div className="toggle-container">
+                        <span className={`label ${!isYearly ? "active" : ""}`}>
+                            Monthly
+                        </span>
+
+                        <div
+                            className={`toggle ${isYearly ? "active" : ""}`}
+                            onClick={() => setIsYearly(!isYearly)}
+                        >
+                            <div className="toggle-circle" />
+                        </div>
+
+                        <span className={`label ${isYearly ? "active" : ""}`}>
+                            Yearly
+                        </span>
+                    </div>
 
                     {/* Basic */}
 
-                    <div className="Monthlyp">
+                    <div className="yearly">
 
-                        <h2>Basic</h2>
+                        <div className="Monthlyp">
 
-
-                        <p>Includes basic usage of our platform.
-                            Recommended for new and aspiring photographers
-                        </p>
-
-                        {isMonthly !== false ? (<div className="Price">
-                            <h1>$19.00</h1>
-                            <h5>per month</h5>
-                        </div>)
-                            : (<div className="Price">
-                                <h1>$190.00</h1>
-                                <h5>per year</h5>
-                            </div>)}
+                            <h2>Basic</h2>
 
 
+                            <p>Includes basic usage of our platform.
+                                Recommended for new and aspiring photographers
+                            </p>
+
+                            {isYearly !== true ? (<div className="Price">
+                                <h1>$19.00</h1>
+                                <h5>per month</h5>
+                            </div>)
+                                : (<div className="Price">
+                                    <h1>$190.00</h1>
+                                    <h5>per year</h5>
+                                </div>)}
 
 
 
-                        <button> PICK PLAN</button>
 
+
+                            <button> PICK PLAN</button>
+
+
+                        </div>
+
+                        {/* Pro */}
+
+                        <div className="Monthlyp">
+
+                            <h2>Pro</h2>
+
+
+                            <p>More advanced features available.
+                                Recommended for photography veterans and professionals.
+                            </p>
+
+                            {isYearly !== true ? (<div className="Price">
+                                <h1>$39.00</h1>
+                                <h5>per month</h5>
+                            </div>)
+                                : (<div className="Price">
+                                    <h1>$390.00</h1>
+                                    <h5>per year</h5>
+                                </div>)}
+
+
+
+
+
+                            <button> PICK PLAN</button>
+
+
+                        </div>
+
+
+
+                        {/* Business */}
+
+                        <div className="Monthlyp">
+
+                            <h2>Business</h2>
+
+
+                            <p>
+                                Additional features available such as more detailed metrics. Recommended for
+                                business owners
+                            </p>
+
+                            {isYearly !== true ? (<div className="Price">
+                                <h1>$99.00</h1>
+                                <h5>per month</h5>
+                            </div>)
+                                : (<div className="Price">
+                                    <h1>$990.00</h1>
+                                    <h5>per year</h5>
+                                </div>)}
+
+
+
+
+
+                            <button> PICK PLAN</button>
+
+
+                        </div>
 
                     </div>
-
-                    {/* Pro */}
-
-                    <div className="Monthlyp">
-
-                        <h2>Pro</h2>
-
-
-                        <p>More advanced features available.
-                            Recommended for photography veterans and professionals.
-                        </p>
-
-                        {isMonthly !== false ? (<div className="Price">
-                            <h1>$39.00</h1>
-                            <h5>per month</h5>
-                        </div>)
-                            : (<div className="Price">
-                                <h1>$390.00</h1>
-                                <h5>per year</h5>
-                            </div>)}
-
-
-
-
-
-                        <button> PICK PLAN</button>
-
-
-                    </div>
-
-
-
-                    {/* Business */}
-
-                    <div className="Monthlyp">
-
-                        <h2>Business</h2>
-
-
-                        <p>
-                            Additional features available such as more detailed metrics. Recommended for
-                            business owners
-                        </p>
-
-                        {isMonthly !== false ? (<div className="Price">
-                            <h1>$99.00</h1>
-                            <h5>per month</h5>
-                        </div>)
-                            : (<div className="Price">
-                                <h1>$990.00</h1>
-                                <h5>per year</h5>
-                            </div>)}
-
-
-
-
-
-                        <button> PICK PLAN</button>
-
-
-                    </div>
-
 
 
                 </div>

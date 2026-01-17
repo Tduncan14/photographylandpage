@@ -80,12 +80,21 @@
     gap: 35px;
 }
 
+
+.yearMe {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 .yearly {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 8rem;
+    padding-top: 3rem;
     gap: 40px;
 
 }
@@ -217,4 +226,55 @@
     letter-spacing: 4px;
     font-weight: 700;
     margin-bottom: 2rem;
+}
+
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.label {
+    font-weight: 600;
+    color: lightgray;
+    transition: color 0.3s ease;
+}
+
+.label.active {
+    color: black;
+}
+
+.toggle {
+    width: 60px;
+    height: 30px;
+    background: black;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-circle {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: transform 0.3s ease;
+}
+
+.toggle.active .toggle-circle {
+    transform: translateX(28px);
+}
+
+
+.yearMEE {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
 }

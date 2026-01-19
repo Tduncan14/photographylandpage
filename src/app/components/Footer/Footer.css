@@ -91,3 +91,45 @@
     flex-direction: column;
     height: 100%;
 }
+
+
+
+@media (max-width: 768px) {
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .leftFooter {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .leftRight ul {
+        align-items: center;
+    }
+
+    .socialIcons {
+        margin-top: 1.5rem;
+        justify-content: center;
+    }
+
+    .rightFooter {
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .arrowMEe {
+        justify-content: center;
+    }
+
+    .copyright h3 {
+        text-align: center;
+    }
+}

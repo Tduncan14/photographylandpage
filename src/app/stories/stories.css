@@ -1,3 +1,7 @@
+/* =========================
+   DESKTOP STYLES
+========================= */
+
 .storiesStory {
     display: grid;
     height: 500px;
@@ -8,7 +12,6 @@
 
 .fullMoon {
     width: 100%;
-    /* Use 100% instead of 100vw */
     background-image: url('/assets/stories/desktop/moon-of-appalacia.jpg');
     background-size: cover;
     background-position: center;
@@ -21,7 +24,6 @@
     color: white;
 }
 
-
 .contentMoon {
     display: flex;
     flex-direction: column;
@@ -29,7 +31,6 @@
     grid-area: hazy;
     margin-top: 8rem;
     margin-bottom: 6rem;
-
 }
 
 .contentMoon h3 {
@@ -44,7 +45,6 @@
     text-wrap: wrap;
     font-size: clamp(26px, 28px, 30px);
 }
-
 
 .contentMoon h4 {
     margin-top: 1.2rem;
@@ -63,16 +63,84 @@
     color: rgba(223, 223, 233, 0.8);
 }
 
-
 .readMeStory {
     display: flex;
     gap: 15px;
     margin-top: .5rem;
     font-size: clamp(10px, 13px, 22px);
     font-weight: 700;
-
 }
 
 .readMeStory img {
     filter: brightness(0) invert(1);
+}
+
+/* =========================
+   TABLET STYLES
+========================= */
+
+@media (max-width: 1024px) {
+
+    .storiesStory {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .fullMoon {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hazy hazy";
+    }
+
+    .contentMoon {
+        padding-left: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .contentMoon h1 {
+        width: 90%;
+        letter-spacing: 6px;
+    }
+}
+
+/* =========================
+   MOBILE STYLES
+========================= */
+
+@media (max-width: 768px) {
+
+    .storiesStory {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .fullMoon {
+        grid-template-columns: 1fr;
+        grid-template-areas: "hazy";
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+
+    .contentMoon {
+        padding-left: 0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+
+    .contentMoon h1 {
+        width: 100%;
+        letter-spacing: 4px;
+        font-size: 22px;
+    }
+
+    .contentMoon p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    .readMeStory {
+        justify-content: center;
+        gap: 10px;
+    }
 }

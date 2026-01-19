@@ -1,3 +1,7 @@
+/* =========================
+   DESKTOP STYLES
+========================= */
+
 .artOne,
 .artTwo,
 .artThree {
@@ -5,11 +9,7 @@
     grid-template-columns: 57% 43%;
     width: 100%;
     align-items: stretch;
-
-
-    /* adjust as needed */
 }
-
 
 .artOne {
     direction: rtl;
@@ -22,11 +22,9 @@
 .gallery,
 .GalleryText {
     flex: 1;
-    /* each takes 50% */
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 .textOne h1,
@@ -35,9 +33,7 @@
     font-size: clamp(26px, 34px, 34px);
     text-transform: uppercase;
     margin-bottom: .5rem;
-
 }
-
 
 .textThree {
     text-align: left !important;
@@ -45,13 +41,10 @@
 
 .textOne p {
     line-height: 35px;
-
-
 }
 
 .gallery {
     position: relative;
-    /* needed for Next.js Image or fill style */
 }
 
 .textOne {
@@ -69,9 +62,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    /* remove inline spacing */
     flex-shrink: 0;
-    /* prevent image shrinking */
 }
 
 .GalleryText {
@@ -98,13 +89,7 @@
     gap: 25px;
     align-items: center;
     font-weight: 700;
-
 }
-
-
-/* this is the border area */
-
-
 
 .borderMe {
     padding: 3rem;
@@ -119,4 +104,78 @@
     width: 4px;
     height: 100%;
     background: linear-gradient(135deg, #1e90ff, #ff2d2d, #ffb347);
+}
+
+/* =========================
+   TABLET STYLES
+========================= */
+
+@media (max-width: 1024px) {
+
+    .artOne,
+    .artTwo,
+    .artThree {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .GalleryText {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .textOne h1,
+    .textTwo h1 {
+        font-size: 26px;
+    }
+
+    .textOne p {
+        line-height: 30px;
+    }
+}
+
+/* =========================
+   MOBILE STYLES
+========================= */
+
+@media (max-width: 768px) {
+
+    .artOne,
+    .artTwo,
+    .artThree {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .gallery {
+        height: 250px;
+    }
+
+    .photo {
+        height: 100%;
+    }
+
+    .GalleryText {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .textThree {
+        text-align: center !important;
+    }
+
+    .anInvite,
+    .reverseME {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .borderMe {
+        padding: 2rem;
+    }
+
+    .borderMe::before {
+        height: 60%;
+        top: 20%;
+    }
 }

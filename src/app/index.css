@@ -17,3 +17,40 @@
 
 
 }
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .story {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .iconsSection {
+        padding: 3rem 2.5rem;
+        gap: 25px;
+    }
+}
+
+/* =========================
+   MOBILE STYLES
+========================= */
+
+@media (max-width: 768px) {
+
+    .story {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .iconsSection {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 20px;
+        text-align: center;
+    }
+}

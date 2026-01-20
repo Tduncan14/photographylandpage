@@ -34,7 +34,7 @@ const page = () => {
 
 
                     <div className="PriceImage">
-                        <img src="assets/pricing/desktop/Hero.jpg" />
+                        <img src="assets/pricing/desktop/hero.jpg" />
                     </div>
 
                 </div>

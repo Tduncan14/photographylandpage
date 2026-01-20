@@ -25,7 +25,7 @@ const page = () => {
 
 
                     <div className="FeatureImage">
-                        <img src="assets/features/desktop/hero.jpg" />
+                        <img src="/assets/features/desktop/hero.jpg" />
                     </div>
 
                 </div>

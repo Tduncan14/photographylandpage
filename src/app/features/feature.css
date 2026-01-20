@@ -187,11 +187,47 @@
 
 @media (max-width: 768px) {
 
-    .FeaturesContent,
-    .borderFeature {
-        flex-direction: column;
-        text-align: center;
+    /* =========================
+   MOBILE STYLES
+========================= */
+    @media (max-width: 768px) {
+
+        .FeaturesContent,
+        .borderFeature {
+            flex-direction: column;
+            text-align: center;
+            background-color: white;
+            /* override black background */
+        }
+
+        .FeatureFeature {
+            padding: 2rem 1.5rem;
+        }
+
+        .FeatureFeature h1 {
+            align-self: center;
+            letter-spacing: 4px;
+        }
+
+        .FeatureFeature p {
+            padding-right: 0;
+        }
+
+        .FeatureImage {
+            height: 250px;
+        }
+
+        .borderMee::before {
+            display: none;
+        }
+
+        .FeaturesGallery {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+            gap: 20px;
+        }
     }
+
 
     .FeatureFeature {
         padding: 2rem 1.5rem;

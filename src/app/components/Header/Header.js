@@ -12,7 +12,7 @@ const Header = () => {
     <div className="header">
 
       <div className="Logo">
-        <Link href="/">
+        <Link className="Logo" href="/">
           <div className="triangle-logo"></div>
           <h1>PHOTOSNAP</h1>
         </Link>
